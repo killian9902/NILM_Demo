@@ -14,8 +14,9 @@
 .w-layout-cell {
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: stretch;
   display: flex;
+  width: 100%;
 }
 
 .nav {
@@ -399,8 +400,30 @@
 }
 
 .div-block-2 {
+  flex-flow: column;
   flex: 1;
-  align-self: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  align-items: stretch;
+  flex-direction: column;
+  display: flex;
+}
+
+.table {
+  width: 100%; /* Ensure the table takes the full width of .div-block-2 */
+  border-collapse: collapse; /* For a more compact table look */
+  table-layout: fixed; /* Helps distribute column width evenly */
+}
+
+.table td,
+.table th {
+  padding: 8px; /* Add more padding to space out content */
+  text-align: left; /* Align text to left or center based on preference */
+  border: 1px solid #ccc; /* Optional: for borders around cells */
+}
+
+.table th {
+  background-color: #f4f4f4; /* Optional: for a different header background */
 }
 
 .div-block-3 {
@@ -565,6 +588,33 @@
   background-color: rgba(255, 255, 255, 0);
   margin-top: 16px;
   font-weight: 700;
+}
+
+.paragraph {
+  text-align: center;
+  flex-flow: column;
+  flex: 1;
+  justify-content: center;
+  align-self: stretch;
+  align-items: stretch;
+  display: block;
+}
+
+.heading-4 {
+  flex: none;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  display: flex;
+}
+
+.div, .table {
+  flex-flow: column;
+  flex: 1;
+  justify-content: center;
+  align-self: stretch;
+  align-items: center;
+  display: flex;
 }
 
 #w-node-a5b84139-cafe-6590-7278-c30d40544553-c44e0854 {

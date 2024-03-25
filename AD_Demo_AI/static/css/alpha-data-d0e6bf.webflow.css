@@ -398,18 +398,53 @@
   color: #333;
 }
 
-.div-block-2 {
-  flex: 1;
-  align-self: center;
+.results-container {
+  font-family: Arial, sans-serif;
+  background: #ffffff00;
+  padding: 5px;
+  max-height: 600px;
+  overflow: fixed;
 }
 
-.div-block-3 {
-  flex-flow: row;
-  flex: 0 auto;
-  justify-content: center;
-  align-self: center;
-  align-items: center;
-  display: flex;
+.results-container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.results-table {
+  width: 100%; /* Ensures the table stretches to the width of the container */
+  border-collapse: collapse;
+  table-layout: fixed; /* Fixed table layout helps with setting column widths */
+}
+
+.table-scroll {
+  overflow-y: auto; /* Vertical scroll */
+  max-height: 450px; /* Set maximum height */
+}
+
+.results-table td {
+  padding: 4px;
+  text-align: center;
+  border: 1px solid #DDD; /* Light grey border for each cell */
+  word-wrap: break-word;
+}
+
+.target-row {
+  background-color: #DFF0D8; /* Light green background for target rows */
+}
+
+.result-row {
+  background-color: #ffffff;
+}
+
+.output-row {
+  background-color: #F2F2F2; /* Light grey background for output rows */
+}
+
+.loss {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .heading-3 {
@@ -588,6 +623,7 @@
 #w-node-_12ea388e-f072-9abc-05cc-17eb0565e1b7-7d0ab7a7 {
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr;
+  max-height: 600px; /* Adjust the height as needed */
 }
 
 #w-node-_12ea388e-f072-9abc-05cc-17eb0565e1b8-7d0ab7a7, #w-node-_7b0faea5-17f2-d6ef-43e9-415752ad0525-7d0ab7a7 {
