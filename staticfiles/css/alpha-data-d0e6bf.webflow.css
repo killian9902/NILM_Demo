@@ -498,7 +498,9 @@
 }
 
 .p {
+  text-align: justify;
   flex: 0 auto;
+  font-weight: 400;
 }
 
 .button-2 {
