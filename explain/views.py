@@ -1,3 +1,9 @@
 from django.shortcuts import render
 
-# Create your views here.
+from django.http import HttpResponse
+
+
+def explainindex(request):
+    template_name = 'explain/explainindex.html'
+    return render(request, template_name)
+

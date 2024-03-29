@@ -18,6 +18,7 @@ def trainingindex(request):
 def create(request):
     if request.method == 'POST':
 
+
         start_datetime_str = request.POST.get('start_date')
         end_datetime_str = request.POST.get('end_date')
 
@@ -62,6 +63,7 @@ def appliance(request):
     if request.method == 'POST':
         print(request.POST)
         
+        
 
 
         appliance_str = request.POST.get('appliance')
@@ -98,7 +100,10 @@ def appliance(request):
 
         
         return JsonResponse(response_data, encoder=DjangoJSONEncoder)
-        
+    
+
+ 
+            
         
 
 
